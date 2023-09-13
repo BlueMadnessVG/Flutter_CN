@@ -7,8 +7,7 @@ class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
-  _HomePageState createState() => _HomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
@@ -21,6 +20,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Wellcome hunter'),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
@@ -29,7 +29,12 @@ class _HomePageState extends State<HomePage> {
             Image.asset('assets/img/rathalos_logo.png'),
             Text('Number of monster hunted', style: TextStyle(fontSize: 25)),
             Text('$_counter',
-                style: TextStyle(fontSize: 30, color: Colors.purple))
+                style: TextStyle(fontSize: 30, color: Colors.purple)),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: Text('return'))
           ],
         ),
       ),
@@ -49,7 +54,7 @@ class _HomePageState extends State<HomePage> {
             });
           },
         ),
-        SizedBox(
+/*         SizedBox(
           height: 10,
         ),
         FloatingActionButton(
@@ -61,7 +66,7 @@ class _HomePageState extends State<HomePage> {
               }
             });
           },
-        )
+        ) */
       ]),
     );
   }
