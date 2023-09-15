@@ -28,6 +28,17 @@ class MainPage extends StatelessWidget {
               height: 10,
             ),
             ElevatedButton(
+              child: Text('Receive data'),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.green, onPrimary: Colors.white),
+              onPressed: () {
+                Navigator.pushNamed(context, '/data_received');
+              },
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            ElevatedButton(
               child: Text('Violate the law'),
               style: ElevatedButton.styleFrom(
                   primary: Colors.red, onPrimary: Colors.white),
