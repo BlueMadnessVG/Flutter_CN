@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/HomaPage.dart';
+import 'package:flutter_application_1/src/list_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Practice 7',
-      home: const HomePage(),
+      home: const ListPage(),
     );
   }
 }
