@@ -32,8 +32,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      title: 'Practice 7',
-      home: const ListPage(),
+      title: 'Practice 10',
+      home: ListPage(),
     );
   }
 }
