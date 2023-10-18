@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/crud_page.dart';
+import 'package:flutter_application_1/src/spashScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,8 +32,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      title: 'Practice 12',
-      home: CrudPage(),
+      title: 'Mini proyecto 2',
+      home: splashscreen(),
     );
   }
 }
