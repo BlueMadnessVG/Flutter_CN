@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/slivers_page.dart';
+import 'package:flutter_application_1/src/listview_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,8 +32,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      title: 'Practice 12',
-      home: SliverPage(),
+      title: 'Practice 16',
+      home: ListViewPage(),
     );
   }
 }
